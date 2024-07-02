@@ -9,7 +9,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="p-4 bg-blue-100">
+    <div className=" bg-blue-100">
       <div className="box-content  p-4">
         <div className="flex justify-between items-center pb-5">
           <h1 className=''>Explore</h1>
@@ -21,7 +21,7 @@ const Dashboard = () => {
             placeholder="Search"
             value={searchItem}
             onChange={handleSearch}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2 border rounded-full"
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Footer from './Footer';
 const Items = () => {
   const [items, setItems] = useState([]);
 
@@ -30,142 +30,7 @@ const Items = () => {
           "shipping_method": null,
           "id": "3"
         },
-        {
-          "createdAt": "2024-07-01T03:39:43.992Z",
-          "item": "item 4",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 94,
-          "shipping_method": "Same Day Shipping",
-          "id": "4"
-        },
-        {
-          "createdAt": "2024-07-01T04:45:48.368Z",
-          "item": "item 5",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 13,
-          "shipping_method": "Same Day Shipping",
-          "id": "5"
-        },
-        {
-          "createdAt": "2024-07-01T01:51:34.268Z",
-          "item": "item 6",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 50,
-          "shipping_method": null,
-          "id": "6"
-        },
-        {
-          "createdAt": "2024-07-01T03:27:01.009Z",
-          "item": "item 7",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 33,
-          "shipping_method": null,
-          "id": "7"
-        },
-        {
-          "createdAt": "2024-07-01T08:17:42.536Z",
-          "item": "item 8",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 62,
-          "shipping_method": "Same Day Shipping",
-          "id": "8"
-        },
-        {
-          "createdAt": "2024-07-01T05:24:39.813Z",
-          "item": "item 9",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 47,
-          "shipping_method": null,
-          "id": "9"
-        },
-        {
-          "createdAt": "2024-07-01T12:59:43.276Z",
-          "item": "item 10",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 0,
-          "shipping_method": "Same Day Shipping",
-          "id": "10"
-        },
-        {
-          "createdAt": "2024-07-01T06:07:39.347Z",
-          "item": "item 11",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 80,
-          "shipping_method": null,
-          "id": "11"
-        },
-        {
-          "createdAt": "2024-07-01T06:29:52.237Z",
-          "item": "item 12",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 79,
-          "shipping_method": null,
-          "id": "12"
-        },
-        {
-          "createdAt": "2024-06-30T17:32:46.778Z",
-          "item": "item 13",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 12,
-          "shipping_method": null,
-          "id": "13"
-        },
-        {
-          "createdAt": "2024-06-30T14:38:11.126Z",
-          "item": "item 14",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 92,
-          "shipping_method": "Same Day Shipping",
-          "id": "14"
-        },
-        {
-          "createdAt": "2024-06-30T19:18:30.302Z",
-          "item": "item 15",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 11,
-          "shipping_method": "Same Day Shipping",
-          "id": "15"
-        },
-        {
-          "createdAt": "2024-07-01T00:20:53.196Z",
-          "item": "item 16",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 41,
-          "shipping_method": null,
-          "id": "16"
-        },
-        {
-          "createdAt": "2024-07-01T08:30:38.864Z",
-          "item": "item 17",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 76,
-          "shipping_method": null,
-          "id": "17"
-        },
-        {
-          "createdAt": "2024-06-30T16:48:50.557Z",
-          "item": "item 18",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 47,
-          "shipping_method": "Same Day Shipping",
-          "id": "18"
-        },
-        {
-          "createdAt": "2024-07-01T02:55:55.165Z",
-          "item": "item 19",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 33,
-          "shipping_method": null,
-          "id": "19"
-        },
-        {
-          "createdAt": "2024-07-01T13:11:35.835Z",
-          "item": "item 20",
-          "image_url": "https://placehold.co/400x400.png",
-          "price": 61,
-          "shipping_method": "Same Day Shipping",
-          "id": "20"
-        }
+      
       ];
       setItems(data);
     };
@@ -186,13 +51,14 @@ const Items = () => {
               MRP: <span className="text-white-500 font-bold">Rs.{item.price}</span>
             </h1>
             {item.shipping_method && (
-              <h2 className="text-xs font-medium text-green-500">
+              <h2 className="text-xs font-medium text-gray-300">
                 {item.shipping_method}
               </h2>
             )}
           </div>
         </div>
       ))}
+  
     </div>
   );
 }
